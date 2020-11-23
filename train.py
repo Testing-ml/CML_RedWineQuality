@@ -16,7 +16,7 @@ df = pd.read_csv('dataset/red_wine_quality.csv')
 y = df.pop("quality")
 
 #@ Splitting the dataset to training and test sets
-X_train, X_test, Y_train, Y_test = train_test_split(df, y, test_size=0.2, random_state=SEED)
+X_train, X_test, Y_train, Y_test = train_test_split(df, y, test_size=0.3, random_state=SEED)
 
 #@ Storing the Random Forest Regressor Model in a variable
 model = RandomForestRegressor(max_depth=12, random_state=SEED)
